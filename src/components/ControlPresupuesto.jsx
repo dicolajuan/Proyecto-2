@@ -17,7 +17,7 @@ const ControlPresupuesto = ({presupuesto,gastos,setGastos,setPrespuesto,setPresu
       setDisponible(totalDisponible);
       setGastado(totalGastado);
       setTimeout(() => {
-          setPorcentaje(Helper.hallarPorcentaje(totalGastado,presupuesto));
+          setPorcentaje(Helper.hallarPorcentaje(totalGastado,presupuesto).toFixed(2));
       }, 500);
     }, [gastos]);
 
